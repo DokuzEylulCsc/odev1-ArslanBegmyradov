@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Arslan Begmyradov 2019280073</title>
 <body>
-<h2>2019 Güz Döneminin ilk ödevi</h2>
-<p>Arslan Begmyradov / Ogr.num:2019280073</p>
-<label for="id1">Metin kutusu 1</label>
-<input type='text' id='id1' /> 
+<h2>Arslan Begmyradov 2019280073</h2>
+<Label for="id1">Metin kutusu 1</label>
+<input type="text" id='id1' />
 <br>
-<label for="id2">Metin kutusu 2</label>
-<input type='text' id='id2' /> 
+<Label for="id2">Metin kutusu 2</label>
+<input type="text" id='id2' />
 <br><br>
-<button type="button">Topla</button>
+<button type="button" onclick="function1()">Topla</button>
 <br><br>
-<label for="id3">Metin kutusu 3</label>
-<input type='text' id='id3' /> 
+<Label for="id3">Metin kutusu 3</label>
+<input type="text" id='id3' />
 <br>
-<label for="id4">Metin kutusu 4</label>
-<input type='text' id='id4' /> 
+<Label for="id4">Metin kutusu 4</label>
+<input type="text" id='id4' />
 <br><br>
-<button type="button">Yapýþtýr</button>
+<button type="button" onclick="function2()">Yapıştır</button>
+<script language="Javascript">
+function function1() {
+	var sayi1 = Number(document.getElementById("id1").value);
+	var sayi2 = Number(document.getElementById("id2").value);
+	var toplam = sayi1+sayi2;
+	alert(toplam);
+        }
+function function2() {
+	var metin1 = document.getElementById("id3").value;
+	var metin2 = document.getElementById("id4").value;
+	var yapistir = metin1 + ' ' + metin2;
+	alert(yapistir);
+	}
+  
+  /* Kaynak: JavaScript dersleri  https://www.youtube.com/watch?v=pXI57SAP0t8&list=PLIHume2cwmHclFqFCqEmI3hh4GipmiM8b */
+  
+</script>
 </body>
 </html>
